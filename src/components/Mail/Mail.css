@@ -1,0 +1,109 @@
+.base
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step
+{
+    display: flex;
+    height: 60%;
+    align-items: flex-start;
+}
+
+.central-base
+{
+    width: 600px;
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+.number
+{
+    margin-top: 25px;
+}
+
+.title-p
+{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+.name
+{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.name p
+{
+    font-size: 17px;
+    font-weight: unset;
+    
+}
+
+.placeholder
+{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.placeholder p
+{
+    color: rgba(0, 0, 0, 0.664);
+}
+
+.name-inp
+{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.button-div
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.link
+{
+    height: 100%;
+    width: 140px;
+    border: none;
+    background-color: rgb(26, 25, 25);
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-div i
+{
+    margin: 0 5px;
+}
+
+.alert
+{
+    height: 100%;
+    width: 250px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

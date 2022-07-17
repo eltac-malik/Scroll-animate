@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import {Routes,Route,useLocation} from 'react-router-dom'
 import './App.css';
+import Base from './components/Base/Base';
+import Home from './components/Home/Home';
+import Mail from './components/Mail/Mail'
+import Address from './components/Address/Address'
+import {AnimatePresence} from 'framer-motion'
 
 function App() {
+
+  let location = useLocation()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AnimatePresence>
+        <Routes location={location} key={location.key}>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/base' element={<Base/>}/>
+          <Route path='/mail' element={<Mail/>}/>
+          <Route path='/address' element={<Address/>}/>
+        </Routes>
+      </AnimatePresence>
+
     </div>
   );
 }
